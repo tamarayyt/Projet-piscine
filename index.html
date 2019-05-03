@@ -1,65 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ECE Amazon</title>
+  <title>ECE AMAZON</title> 
 	<link href="menu.css" rel="stylesheet" type="text/css" /> 
 	<meta charset="utf-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <link href="logo.png" rel="icon" type="image/png" /> 
+
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $('.header').height($(window).height());
+    });
+    </script>
+
+
+
 </head>
 
 <body>
-	<h1></p></p>&nbsp;&nbsp;ECE AMAZON</h1>
-  <nav>
-    <ul>
-      <li class="menu-html"><a href="index.html">Home</a>
-      <li class="categories-html"><a href="categories.html">Categories</a>
-        <ul class="submenu">
+
+<nav class="navbar navbar-expand-md">
+  <a class="navbar-brand" href="index.html">ECE AMAZON</a>
+  <button class="navbar-toggler navbar-dark" type="button" datatoggle="collapse" data-target="#main-navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="main-navigation">
+<ul class="navbar-nav">
+  <li class="menu-html"><a class="nav-link"
+  href="index.html">Accueil</a></li>
+  
+  
+  <li class="categories-html"><a class="nav-link" href="index.html">Categories</a>
+    <ul class="submenu">
           <li><a href="#"> Livres</a></li>
           <li><a href="#"> Musiques</a></li>
           <li><a href="#"> Vetements</a></li>
-        </ul>
-      </li>
-      <li class="ventesflash-html"><a href="ventesflash.html">Ventes flash</a></li>
-
-      <li class="vendre-html"><a href="vendre.html">Vendre</a></li>
-
-      <li class="connexion-html"><a href="connexion.html">Votre compte</a>
-        <ul class="submenu">
+    </ul>
+  </li>
+  <li class="venteflash-html"><a class="nav-link" href="#">Ventes Flash</a></li>
+  <li class="vendre-html"><a class="nav-link" href="vendre.html">Vendre</a></li>
+  
+  <li class="connexion-html"><a class="nav-link" href="connexion.html">Votre compte</a>
+      <ul class="submenu">
           <li><a href="connexion.html"> Acceder à votre compte</a></li>
           <li><a href="inscription.html"> Creer mon compte</a></li>
-        </ul>
-      </li>
-    
-      <li><a href="panier.html">Panier</a></li>
+      </ul>
+    </li>
+  <li class="Panier-html"><a class="nav-link" href="panier.html">Panier</a></li>
       
-      <li><a href="admin.html">Admin</a></li>
     </ul>
-  </nav>
-		<h1 id="logo"><img src="fond.png" alt="ECE Amazon" width="1300" height="150" /></h1> 
+  </div>
+</nav>
+
+
+
+<header class="page-header header container-fluid">
+  <div class="overlay"></div>
+  <div class="description">
+    <h1>Bienvenue à la page de votre destination!</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien
+          rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in
+          pharetra sem ullamcorper.
+        </p>
+        <button class="btn btn-outline-secondary btn-lg">Dites m'en plus!
+        </button>
+  </div>
+</header>
+
+  
+<footer class="page-footer">
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-8 col-md-8 col-sm-12">
+  <h6 class="text-uppercase font-weight-bold">Information additionnelle</h6>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet
+      dolor id sapien rutrum, id vulputate quam iaculis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet
+      dolor id sapien rutrum, id vulputate quam iaculis.
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12">
+<h6 class="text-uppercase font-weightbold">Contact</h6>
+<p class="contact">ECE AMAZON<br> 
+      134 Boulevard Voltaire<br>
+          75013 Paris<br> <br>
+
+<div class="footer-copyright text-center">&copy; 2019 Copyright | Droit
+d'auteur: webDynamique.ece.fr</div>
+<a href="mailto:ece.amazon@gmail.com">ece.amazon@gmail.com</a>
+  </div>
+</footer>
 		
 
 	
 
-	<div id="rightcolumn">
-		<p>ECE Amazon est un site vous permettant à la fois d'acheter et/ou de revendre vos propres produits. </p>
-		<p>Vous pourrez y trouver différents catégories de produits, à savoir: </p> 
+	
 		
-		<ul>
-          <li><a href="#"> des livres</a></li>
-          <li><a href="#"> des musiques</a></li>
-          <li><a href="#"> des vetements</a></li>
-		</ul>
 
-		<p class="contact">ECE AMAZON<br> 
-			134 Boulevard Voltaire<br>
-        	75013 Paris<br> <br>
-			(+33) 01 02 03 04 05 06 </p>
+		
 	</div>
 
      
 
-	<div id="footer">Copyright &copy; 2019 ECE Amazon<br>
-		<a href="mailto:ece.amazon@gmail.com">ece.amazon@gmail.com</a>
- 	</div>
+	
+		
   </div>
 </div>
 </body>
