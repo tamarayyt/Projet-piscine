@@ -1,12 +1,14 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>ECE AMAZON</title> 
+  <title>ECE AMAZON</title>
+  <link rel="stylesheet" type="text/css" href="ventef.css"> 
   <link rel="icon" type="image/png" href="ECEE.png" />
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="menu.css" rel="stylesheet" type="text/css" /> 
-  <meta charset="utf-8" />
+	<link href="menu.css" rel="stylesheet" type="text/css" /> 
+	<meta charset="utf-8" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
     <link href="logo.png" rel="icon" type="image/png" /> 
@@ -27,6 +29,13 @@
 </head>
 
 <body>
+<style type="text/css">
+	body {
+color:black;
+background-color:white;
+background-image:url("wallpaper.jpg");
+}
+</style>
 
 <nav class="navbar navbar-expand-md">
   <a class="navbar-brand" href="index.html"><i class="fas fa-globe-americas"></i> ECE AMAZON</a>
@@ -44,6 +53,7 @@
           <li><a href="#"> Livres</a></li>
           <li><a href="#"> Musiques</a></li>
           <li><a href="#"> Vetements</a></li>
+          <li><a href="#"> Sports & Loisirs</a></li>
     </ul>
   </li>
   <li class="venteflash-html"><a class="nav-link" href="ventesflash.html"><i class="fas fa-bolt"></i> Ventes Flash</a></li>
@@ -55,25 +65,55 @@
     </ul>
   </div>
 </nav>
+<br><div class="row">
+<div class="card">
+  <img src="jean.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p></p>
+ <style>
+	.select{
+		margin-left: 50px;
+	}
+</style>
+<select class="select" style="width:200px">
+  <option>Select a size</option>
+  <option>34</option>
+  <option>36</option>
+  <option>38</option>
+  <option>40</option>
+  <option>42</option>
+  <option>44</option>
+  <option>48</option>
+</select>
+<br><p><button>Add to Cart</button></p>
 
+</div>
 
+<div class="card">
+  <img src="dress.jpg" alt="Yellow Dress" style="width:100%">
+  <h1>Yellow Dress</h1>
+  <p class="price">$29.99</p>
+  <p></p>
+ 	<style>
+	.select{
+				margin-left: 50px;
+			}
+	</style>
+	<select class="select" style="width:200px">
+  <option>Select a size</option>
+  <option>34</option>
+  <option>36</option>
+  <option>38</option>
+  <option>40</option>
+  <option>42</option>
+  <option>44</option>
+  <option>48</option>
+</select>
+<br><p><button>Add to Cart</button></p>
 
-<header class="page-header header container-fluid">
-  <div class="overlay"></div>
-  <div class="description">
-    <h1>Bienvenue à la page de votre destination!</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien
-          rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in
-          pharetra sem ullamcorper.
-        </p>
-        <button class="btn btn-outline-secondary btn-lg">Dites m'en plus!
-        </button>
-  </div>
-</header>
-
-  
+</div>
+</div><br>
 <footer class="page-footer">
   <div class="container">
   <div class="row">
@@ -100,6 +140,7 @@
 d'auteur: webDynamique.ece.fr</div>
 <a href="mailto:ece.amazon@gmail.com">ece.amazon@gmail.com</a>
   </div>
+
 </footer>
 		
 
@@ -119,4 +160,3 @@ d'auteur: webDynamique.ece.fr</div>
 </div>
 </body>
 </html>
- 

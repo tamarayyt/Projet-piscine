@@ -1,54 +1,142 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
+<html>
 <head>
-	<title>ECE Amazon : Vendre</title>
-	<link href="prime.css" rel="stylesheet" type="text/css" /> 
-	<link href="favicon.ico" rel="icon" type="images/x-icon" /> 
+  <title>ECE AMAZON</title>
+  <link rel="stylesheet" type="text/css" href="ventef.css"> 
+  <link rel="icon" type="image/png" href="ECEE.png" />
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="menu.css" rel="stylesheet" type="text/css" /> 
 	<meta charset="utf-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <link href="logo.png" rel="icon" type="image/png" /> 
+
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $('.header').height($(window).height());
+    });
+    </script>
+
+
+
 </head>
+
 <body>
-<div id="wrapper">
-	<h1 id="logo"><img src="primelogo.gif" alt="ECE Amazon" width="650" height="100" /> </h1>
-     <div id="leftcolumn">
-        <ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="ventesflash.html">Ventes Flash</a></li>
-			<li><a href="vendre.html">Vendre</a></li>
-			<li><a href="connexion.html">Votre Compte</a></li> 
-			<li><a href="panier.html">Panier</a></li>
-			<li><a href="admin.html">Admin</a></li>
-		</ul> 
+<style type="text/css">
+	body {
+color:black;
+background-color:white;
+background-image:url("wallpaper.jpg");
+}
+</style>
+
+<nav class="navbar navbar-expand-md">
+  <a class="navbar-brand" href="index.html"><i class="fas fa-globe-americas"></i> ECE AMAZON</a>
+  <button class="navbar-toggler navbar-dark" type="button" datatoggle="collapse" data-target="#main-navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="main-navigation">
+<ul class="navbar-nav">
+  <li class="menu-html"><a class="nav-link"
+  href="index.html"><i class="fa fa-fw fa-home"></i>Accueil</a></li>
+  
+  
+  <li class="categories-html"><a class="nav-link" href="index.html"><i class="fas fa-bars"></i> Categories</a>
+    <ul class="submenu">
+          <li><a href="#"> Livres</a></li>
+          <li><a href="#"> Musiques</a></li>
+          <li><a href="#"> Vetements</a></li>
+          <li><a href="#"> Sports & Loisirs</a></li>
+    </ul>
+  </li>
+  <li class="venteflash-html"><a class="nav-link" href="ventesflash.html"><i class="fas fa-bolt"></i> Ventes Flash</a></li>
+  <li class="vendre-html"><a class="nav-link" href="vendre.html"><i class="fas fa-tags"></i> Vendre</a></li>
+  
+  <li class="connexion-html"><a class="nav-link" href="connexion.html"><i class="fa fa-fw fa-user"></i>Votre compte</a></li>
+  <li class="Panier-html"><a class="nav-link" href="panier.html"><i class="fas fa-shopping-cart"></i> Panier</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+<br><br><div class="container">
+  <img src="livre.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text"><a href="livreflash.html">Littérature</a></div>
+  </div>
+</div><br><br><div class="container">
+  <img src="musique.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text"><a href="musiqueflash.html">Musique</a></div>
+  </div>
+</div>
+<br><br><div class="container">
+  <img src="fashion.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text"><a href="vetementflash.html">Vetements</a></div>
+  </div>
+</div>
+
+<br><br><div class="container">
+  <img src="sport.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text"><a href="sportflash.html">Sports & Loisirs</a></div>
+  </div>
+</div>
+<br><br>
+
+
+
+  
+
+<footer class="page-footer">
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-8 col-md-8 col-sm-12">
+  <h6 class="text-uppercase font-weight-bold">Information additionnelle</h6>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet
+      dolor id sapien rutrum, id vulputate quam iaculis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet
+      dolor id sapien rutrum, id vulputate quam iaculis.
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-12">
+<h6 class="text-uppercase font-weightbold">Contact</h6>
+<p class="contact">ECE AMAZON<br> 
+      134 Boulevard Voltaire<br>
+          75013 Paris<br> <br>
+
+<div class="footer-copyright text-center">&copy; 2019 Copyright | Droit
+d'auteur: webDynamique.ece.fr</div>
+<a href="mailto:ece.amazon@gmail.com">ece.amazon@gmail.com</a>
+  </div>
+</footer>
+		
+
+	
+
+	
+		
+
+		
 	</div>
 
-<div id="rightcolumn">
-	<h2>Financing</h2>
-	<p> Nous travaillons avec de nombreuses sociétés hypothécaires et financières. </p> 
-	<h3 class="home">Financement FAQs</h3>
-	<dl>
-		<dt>Quel montant d'hypothèque puis-je être admissible? </dt>	
-			<dd> Le coût mensuel de base du logement total est normalement basé sur 29% à 41% de
-votre revenu mensuel brut.</dd>
+     
 
-		<dt>Quel pourcentage est le plus utilisé? </dt>
-			<dd>Le pourcentage utilisé dépend de l'institution de prêt et du type de financement.
-</dd>
-
-	<dt> Comment puis-je commencer? </dt>
-		<dd> Contactez-nous dès aujourd'hui pour vous aider à organiser le financement de votre maison. </dd>
-</dl>
-     <div id="nav">
-        <ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="ventesflash.html">Ventes Flash</a></li>
-			<li><a href="vendre.html">Vendre</a></li>
-			<li><a href="connexion.html">Votre Compte</a></li> 
-			<li><a href="panier.html">Panier</a></li>
-			<li><a href="admin.html">Admin</a></li>
-		</ul>
-
-<div id="footer">Copyright &copy; 2019 Prime Properties<br>
-	<a href="mailto:prime.properties@gmail.com">prime.properties@gmail.com </a>
-</div>
-</div>
+	
+		
+  </div>
 </div>
 </body>
-</html>	
+</html>
