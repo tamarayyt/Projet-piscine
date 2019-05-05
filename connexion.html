@@ -26,7 +26,15 @@
 
 </head>
 
-<body>
+
+  <body>
+<style type="text/css">
+  body {
+color:black;
+background-color:white;
+background-image:url("wallpaper.jpg");
+}
+</style>
 
 <nav class="navbar navbar-expand-md">
   <a class="navbar-brand" href="index.html"><i class="fas fa-globe-americas"></i> ECE AMAZON</a>
@@ -44,10 +52,11 @@
           <li><a href="#"> Livres</a></li>
           <li><a href="#"> Musiques</a></li>
           <li><a href="#"> Vetements</a></li>
+          <li><a href="#"> Sports & Loisirs</a></li>
     </ul>
   </li>
   <li class="venteflash-html"><a class="nav-link" href="ventesflash.html"><i class="fas fa-bolt"></i> Ventes Flash</a></li>
-  <li class="vendre-html"><a class="nav-link" href="vendre.html"><i class="fas fa-tags"></i> Vendre</a></li>
+  
   
   <li class="connexion-html"><a class="nav-link" href="connexion.html"><i class="fa fa-fw fa-user"></i>Votre compte</a></li>
   <li class="Panier-html"><a class="nav-link" href="panier.html"><i class="fas fa-shopping-cart"></i> Panier</a></li>
@@ -55,10 +64,7 @@
     </ul>
   </div>
 </nav>
-<header class="page-header header container-fluid">
-  <div class="overlay"></div>
 
-<div class ="description">
   
 
 
@@ -187,13 +193,22 @@ span.psw {
 </head>
 <body>
 
+<style>
+  
+    .body .button {
+      display: block;
+   margin : auto;
+    }
+  
+</style>
 
-
+<div class="description">
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
+</div>
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php">
+  <form class="modal-content animate" action="pass.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="avatar.png" alt="Avatar" class="avatar">
@@ -219,6 +234,7 @@ span.psw {
   </form>
 </div>
 
+
 <script>
 // Get the modal
 var modal = document.getElementById('id01');
@@ -230,10 +246,11 @@ window.onclick = function(event) {
     }
 }
 </script>
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<h2>Vous ne possédez pas de compte? Cŕeez votre compte <a href="inscription.html">ici.</a></h2>
-     </div>
-</header>
+<br><br><br>
+<h4>Vous ne possédez pas de compte? Cŕeez votre compte <a href="inscription.html">ici.</a></h4>
+     
+<br><br><br><br><br><br><br><br><br><br><br>
+
 
 <footer class="page-footer">
   <div class="container">
@@ -270,6 +287,5 @@ d'auteur: webDynamique.ece.fr</div>
 	
 		
   </div>
-</div>
 </body>
 </html>	
