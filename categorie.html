@@ -64,55 +64,179 @@ background-image:url("wallpaper.jpg");
     </ul>
   </div>
 </nav>
-<br><div class="row">
-<div class="card">
-  <img src="jean.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>Tailored Jeans</h1>
-  <p class="price">$19.99</p>
-  <p></p>
- <style>
-	.select{
-		margin-left: 50px;
-	}
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
 </style>
-<select class="select" style="width:200px">
-  <option>Select a size</option>
-  <option>34</option>
-  <option>36</option>
-  <option>38</option>
-  <option>40</option>
-  <option>42</option>
-  <option>44</option>
-  <option>48</option>
-</select>
-<br><p><button>Add to Cart</button></p>
+<body>
+<br><br>
+<h2 style="text-align:center">Categories</h2>
+<br>
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+    <img src="livre.jpg" style="width:100%"><div class="text"><a href="livre.html">Littérature</a></div>
+  </div>
 
+  <div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+    <img src="musique.jpg" style="width:100%"><div class="text"><a href="musique.html">Musique</a></div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+    <img src="fashion.jpg" style="width:100%"><div class="text"><a href="vetement.html">Vêtements</a></div>
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+    <img src="sport.png" style="width:100%"><div class="text"><a href="sport.html">Sports & Loisir</a></div>
+  </div>
+
+  
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  
+    
+  
 </div>
 
-<div class="card">
-  <img src="dress.jpg" alt="Yellow Dress" style="width:100%">
-  <h1>Yellow Dress</h1>
-  <p class="price">$29.99</p>
-  <p></p>
- 	<style>
-	.select{
-				margin-left: 50px;
-			}
-	</style>
-	<select class="select" style="width:200px">
-  <option>Select a size</option>
-  <option>34</option>
-  <option>36</option>
-  <option>38</option>
-  <option>40</option>
-  <option>42</option>
-  <option>44</option>
-  <option>48</option>
-</select>
-<br><p><button>Add to Cart</button></p>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
 
-</div>
-</div><br>
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<br><br>
+
+
+
+  
+
 <footer class="page-footer">
   <div class="container">
   <div class="row">
@@ -132,7 +256,6 @@ background-image:url("wallpaper.jpg");
 d'auteur: webDynamique.ece.fr</div>
 <a href="mailto:ece.amazon@gmail.com">ece.amazon@gmail.com</a>
   </div>
-
 </footer>
 		
 
